@@ -1,0 +1,22 @@
+# Ignore everything by default
+*
+
+# Un-ignore root-level tracked files
+!.gitignore
+!README.md
+!CONTEXT.md
+!requirements.txt
+
+# Un-ignore tracked directories and their contents
+!src/
+!src/**
+!exploration/
+!exploration/**
+!codebook/
+!codebook/**
+
+# Re-ignore macOS metadata and Jupyter checkpoints inside tracked directories
+.DS_Store
+**/.DS_Store
+**/.ipynb_checkpoints/
+**/.ipynb_checkpoints/**
